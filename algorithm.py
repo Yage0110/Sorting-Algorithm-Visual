@@ -192,8 +192,6 @@ def selection_sort(draw_info, ascending=True):
 
 
 
-
-
 def main():
     run = True
     y = 45
@@ -264,11 +262,11 @@ def main():
             elif event.key == pygame.K_s and not sorting:
                 sorting_algorithm = selection_sort
                 sorting_algo_name = "Selection Sort"
-                drawn(draw_info, sorting_algo_name, ascending)
-            
-            
-                
+                drawn(draw_info, sorting_algo_name, ascending)   
+   
     pygame.quit()
+
+
 def drawn(draw_info, algo_name, ascending):
     draw_info.window.fill(draw_info.BACKG_CLR)
     if ascending:
@@ -312,8 +310,6 @@ def drawn_list(draw_info, color_position = {}, clear_bg = False):  #Draw rectang
 
     if clear_bg:
         pygame.display.update()
-
-
 
 if __name__ == "__main__":
     main() 
